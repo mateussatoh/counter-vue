@@ -4,7 +4,8 @@
     <div class="number-grid">
       <div class="number">{{ number }}</div>
       <div class="buttons">
-        <a href="#" @click="plusOne">↑</a> <a href="#" @click="minusOne">↓</a>
+        <a href="#" @click="plusOne">↑</a>
+        <a href="#" @click="minusOne" v-if="number > 0">↓</a>
       </div>
     </div>
   </div>
